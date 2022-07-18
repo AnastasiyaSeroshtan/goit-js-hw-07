@@ -3,9 +3,7 @@ import { galleryItems } from './gallery-items.js';
 
 // console.log(galleryItems);
 
-
 const galleryContainer = document.querySelector('.gallery');
-// console.log(galleryContainer);
 
 function createGalleryItemMarkup(image) {
   return galleryItems.map(({preview, original, description}) =>
@@ -22,25 +20,33 @@ function createGalleryItemMarkup(image) {
 }
 
 const galleryImage = createGalleryItemMarkup(galleryItems);
-// console.log(galleryImage);
-
 galleryContainer.insertAdjacentHTML('beforeend', galleryImage);
-
 galleryContainer.addEventListener('click', handleGalleryContainerClick);
 
 function handleGalleryContainerClick(event) {
     event.preventDefault();
-  console.log(event.target);
-  const descriptionValue = event.target.dataset.source;
-  console.log(descriptionValue);
+  
+    if (!event.target.classList.contains('gallery__image')) {
+    return
+    }
+    else {
+    const descriptionValue = event.target.dataset.source;
 
-  const modal = basicLightbox.create(`
-<img src="${descriptionValue}">`)
+    const modal = basicLightbox.create(
+    `<img src="${descriptionValue}">`,
+    {onShow: () => {window.addEventListener('keydown', handleEscPress)},
+    onClose: () => {window.removeEventListener('keydown', handleEscPress)}
+})
+    modal.show();
 
-modal.show()
+    function handleEscPress (event) {
+    if (event.code === "Escape") {
+        modal.close()}
+}
+}
 }
 
-// import * as basicLightbox from 'basiclightbox'
+
 
 
 
