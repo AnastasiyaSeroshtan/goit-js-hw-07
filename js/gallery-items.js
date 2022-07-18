@@ -62,4 +62,75 @@ export const galleryItems = [
       'https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843_1280.jpg',
     description: 'Lighthouse Coast Sea',
   },
+  {
+    preview:
+      'https://cdn.pixabay.com/photo/2015/07/28/22/03/fireworks-865104__340.jpg',
+    original:
+      'https://cdn.pixabay.com/photo/2015/07/28/22/03/fireworks-865104_960_720.jpg',
+    description: 'Fireworks',
+  },
+  {
+    preview:
+      'https://cdn.pixabay.com/photo/2012/03/01/00/55/garden-19830__340.jpg',
+    original:
+      'https://cdn.pixabay.com/photo/2012/03/01/00/55/garden-19830_960_720.jpg',
+    description: 'Garden',
+  },
+  {
+    preview:
+      'https://cdn.pixabay.com/photo/2016/11/18/16/19/italy-1835613__340.jpg',
+    original:
+      'https://cdn.pixabay.com/photo/2016/11/18/16/19/italy-1835613_960_720.jpg',
+    description: 'Italy',
+  },
+  {
+    preview:
+      'https://cdn.pixabay.com/photo/2014/12/24/05/02/drop-of-water-578897__340.jpg',
+    original:
+      'https://cdn.pixabay.com/photo/2014/12/24/05/02/drop-of-water-578897_960_720.jpg',
+    description: 'Drop of water',
+  },
+  {
+    preview:
+      'https://cdn.pixabay.com/photo/2016/03/04/19/36/beach-1236581__340.jpg',
+    original:
+      'https://cdn.pixabay.com/photo/2016/03/04/19/36/beach-1236581_960_720.jpg',
+    description: 'Beach',
+  },
+  {
+    preview:
+      'https://cdn.pixabay.com/photo/2016/04/18/22/05/seashells-1337565__340.jpg',
+    original:
+      'https://cdn.pixabay.com/photo/2016/04/18/22/05/seashells-1337565_960_720.jpg',
+    description: 'Seashells',
+  },
+  {
+    preview:
+      'https://cdn.pixabay.com/photo/2021/10/13/09/01/corgi-6705821__340.jpg',
+    original:
+      'https://cdn.pixabay.com/photo/2021/10/13/09/01/corgi-6705821_960_720.jpg',
+    description: 'Corgi',
+  },
+  {
+    preview:
+      'https://cdn.pixabay.com/photo/2014/04/14/20/11/pink-324175__340.jpg',
+    original:
+      'https://cdn.pixabay.com/photo/2014/04/14/20/11/pink-324175_960_720.jpg',
+    description: 'Pink tree',
+  },
+  {
+    preview:
+      'https://cdn.pixabay.com/photo/2022/07/10/20/18/raspberry-7313702__340.jpg',
+    original:
+      'https://cdn.pixabay.com/photo/2022/07/10/20/18/raspberry-7313702_960_720.jpg',
+    description: 'Raspberry',
+  },
 ];
+
+
+
+// 
+// 
+// 
+
+

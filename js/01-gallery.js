@@ -10,6 +10,7 @@ function createGalleryItemMarkup(image) {
   {return  `<div class="gallery__item">
   <a class="gallery__link" href="${original}">
     <img
+    loading="lazy"
       class="gallery__image"
       src="${preview}"
       data-source="${original}"
