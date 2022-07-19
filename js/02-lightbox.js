@@ -17,3 +17,9 @@ const galleryImage = createGalleryItemMarkup(galleryItems);
 galleryContainer.insertAdjacentHTML('beforeend', galleryImage);
 
 // galleryContainer.addEventListener('click', handleGalleryContainerClick);
+
+const lightbox = new SimpleLightbox('.gallery a', { /* options */ });
+
+// const gallery = $('.gallery a').simpleLightbox();
+
+// gallery.next();
