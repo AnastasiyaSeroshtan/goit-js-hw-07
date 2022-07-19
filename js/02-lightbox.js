@@ -1,10 +1,10 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
 
-// console.log(galleryItems);
+console.log(galleryItems);
 
 const galleryContainer = document.querySelector('.gallery');
-// console.log(galleryContainer);
+
 
 function createGalleryItemMarkup(image) {
   return galleryItems.map(({preview, original, description}) =>
@@ -16,10 +16,7 @@ function createGalleryItemMarkup(image) {
 const galleryImage = createGalleryItemMarkup(galleryItems);
 galleryContainer.insertAdjacentHTML('beforeend', galleryImage);
 
-// galleryContainer.addEventListener('click', handleGalleryContainerClick);
 
-const lightbox = new SimpleLightbox('.gallery a', { /* options */ });
+const lightbox = new SimpleLightbox('.gallery a', { captionDelay: '250',
+captionPosition: 'bottom', captionsData: "alt"});
 
-// const gallery = $('.gallery a').simpleLightbox();
-
-// gallery.next();
