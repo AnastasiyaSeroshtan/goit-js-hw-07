@@ -1,10 +1,10 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
 
-console.log(galleryItems);
+// console.log(galleryItems);
 
 const galleryContainer = document.querySelector('.gallery');
-console.log(galleryContainer);
+// console.log(galleryContainer);
 
 function createGalleryItemMarkup(image) {
   return galleryItems.map(({preview, original, description}) =>
