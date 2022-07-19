@@ -1,7 +1,7 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
 
-// console.log(galleryItems);
+console.log(galleryItems);
 
 const galleryContainer = document.querySelector('.gallery');
 
@@ -38,6 +38,12 @@ else {
     script.referrerpolicy = 'no-referrer';
 
     document.body.appendChild(script);
+
+    const lazyImage = document.querySelectorAll('.gallery__image');
+    lazyImage.forEach(img => {
+       img.classList.add('lazyload');
+       img.dataset.src = img.src;
+       }) 
 }
 
 galleryContainer.addEventListener('click', handleGalleryContainerClick);
