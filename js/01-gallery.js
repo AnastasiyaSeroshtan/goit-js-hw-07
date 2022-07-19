@@ -10,7 +10,6 @@ function createGalleryItemMarkup(image) {
   {return  `<div class="gallery__item">
   <a class="gallery__link" href="${original}">
     <img
-    loading="lazy"
       class="gallery__image"
       src="${preview}"
       data-source="${original}"
@@ -22,6 +21,7 @@ function createGalleryItemMarkup(image) {
 
 const galleryImage = createGalleryItemMarkup(galleryItems);
 galleryContainer.insertAdjacentHTML('beforeend', galleryImage);
+
 galleryContainer.addEventListener('click', handleGalleryContainerClick);
 
 function handleGalleryContainerClick(event) {
